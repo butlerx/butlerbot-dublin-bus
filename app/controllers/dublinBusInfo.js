@@ -1,6 +1,5 @@
 import _ from 'lodash';
 import dBus from 'dublin-bus.js';
-import config from '../../config/config.json';
 
 function printBuses({ stop, buses }, client, channel) {
   client.say(channel, `Stop address: ${stop}`);
@@ -15,7 +14,7 @@ function printBuses({ stop, buses }, client, channel) {
 }
 
 export default class DublinBusInfo {
-  constructor() {
+  constructor(config) {
     this.config = config;
   }
 

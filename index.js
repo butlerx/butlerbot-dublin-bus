@@ -1,7 +1,7 @@
 import DublinBusInfo from './app/controllers/dublinBusInfo';
 
-export default app => {
-  const dublinBusInfo = new DublinBusInfo();
+export default config => app => {
+  const dublinBusInfo = new DublinBusInfo(config);
   app.joinChannels(dublinBusInfo.config.channelsToJoin);
   app.cmd(
     'dbus',
