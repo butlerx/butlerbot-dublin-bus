@@ -1,6 +1,6 @@
 {
   "name": "butlerbot-dublin-bus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dublin bus plugin for butlerbot",
   "main": "index.js",
   "author": "butlerx",
@@ -26,7 +26,10 @@
     "prettier-eslint-cli": "^4.1.1"
   },
   "lint-staged": {
-    "*.js": ["prettier-eslint --write", "git add"]
+    "*.js": [
+      "prettier-eslint --write",
+      "git add"
+    ]
   },
   "@std/esm": {
     "esm": "js",
